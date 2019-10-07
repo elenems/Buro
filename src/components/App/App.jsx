@@ -1,8 +1,14 @@
 import React from "react";
+import Routes from "../../router/Routes";
+import Theme from "./theme";
+
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Theme>
+      <div className="App">
+        <Routes />
+      </div>
+    </Theme>
   );
 }
 

@@ -3,13 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
-import Routes from './router/Routes';
 
-const app = (
-  <App>
-    <Routes />
-  </App>
-);
+const app = <App></App>;
 
 ReactDOM.render(app, document.getElementById("root"));
 
