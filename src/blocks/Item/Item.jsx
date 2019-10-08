@@ -17,14 +17,17 @@ const useStyles = makeStyles({
   },
   input: {
     display: "none"
+  },
+  item:{
+    margin:"auto"
   }
 });
 export default function Item() {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12}>
-      <Box m="auto" width={2 / 4}>
+    <Grid classes={{root:classes.item}} item xs={12} md={6}>
+      <Box>
         <main>
           <Box display="flex">
             <div className="image-placeholder-big">

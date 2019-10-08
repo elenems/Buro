@@ -7,7 +7,7 @@ import Item from '../../blocks/Item';
 export default function ItemPage() {
   return (
     <Container fixed>
-      <Grid container spacing={6}>
+      <Grid justify='flex-start' direction='column' container spacing={6}>
         <Header />
         <Item />
       </Grid>

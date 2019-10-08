@@ -5,7 +5,6 @@ import SearchIcon from "@material-ui/icons/Search";
 import Box from "@material-ui/core/Box";
 import Select from "@material-ui/core/Select";
 import FormControl from "@material-ui/core/FormControl";
-import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
 import FormHelperText from "@material-ui/core/FormHelperText";
@@ -32,8 +31,6 @@ export default function SearchBar() {
   };
   return (
     <Box
-      m="auto"
-      width={2 / 4}
       display="flex"
       justifyContent="center"
       alignItems="baseline"
