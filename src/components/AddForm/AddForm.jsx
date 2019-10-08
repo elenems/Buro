@@ -29,7 +29,6 @@ export default function AddForm() {
         setTitle(value);
         break;
       case "location":
-        console.log(id, value)
         setLocation(value);
         break;
       case "description":
@@ -41,18 +40,16 @@ export default function AddForm() {
   const send = e => {
     e.preventDefault();
     const data = new FormData();
-    data.append("file", file);
+    console.log(file.file)
+    data.append("file", file.file);
     const requestParams = `title=${title}&location=${location}&description=${description}`;
     const link = 'https://europe-west2-buro-c4d93.cloudfunctions.net/api/addItem?' + requestParams;
-    console.log(link)
-    axios.post(link, {
-      data
-    })
+    axios.post(link, data)
     .then(()=>{
 
     })
     .catch(e=>{
-      console.log(e.response.data)
+      console.log(e)
     })
   };
   return (
