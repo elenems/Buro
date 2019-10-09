@@ -35,7 +35,7 @@ export default function ListItem({ item }) {
     >
       <div className="imagePlaceholder">
         <Link to={`/item/${item.id}`}>
-          <img src={item.imageUrl} alt={item.title} />
+          <img src={item.imgUrl} alt={item.title} />
         </Link>
       </div>
       <Box classes={{ root: footerClasses.root }} p="0px 4px">
@@ -50,7 +50,7 @@ export default function ListItem({ item }) {
               variant="subtitle1"
               component="span"
             >
-              {item.date}
+              {item.date.slice(0,9)}
             </Typography>
           </Box>
           <Box display="flex" alignItems="center">

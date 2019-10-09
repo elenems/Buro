@@ -13,9 +13,10 @@ export default function AddForm() {
   const [location, setLocation] = useState("Lviv");
   const [description, setDescription] = useState("");
   const [file, setFile] = useState({});
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
 
   const onChangeHandler = event => {
-    console.log(event.target.files[0])
     setFile({
       file: event.target.files[0]
     });
@@ -40,17 +41,22 @@ export default function AddForm() {
   const send = e => {
     e.preventDefault();
     const data = new FormData();
-    console.log(file.file)
+    if(file.file){
     data.append("file", file.file);
     const requestParams = `title=${title}&location=${location}&description=${description}`;
     const link = 'https://europe-west2-buro-c4d93.cloudfunctions.net/api/addItem?' + requestParams;
     axios.post(link, data)
-    .then(()=>{
-
+    .then((data)=>{
+      setMessage(data.data.message);
+      setError('')
     })
     .catch(e=>{
-      console.log(e)
+      setMessage('');
+      setError(Object.values(e.response.data.errors).join('. '));
     })
+  }else{
+    setError('Завантажте фото')
+  }
   };
   return (
     <form>
@@ -98,6 +104,8 @@ export default function AddForm() {
           Відправити
         </Button>
       </Box>
+      {error.length ? <Typography component='span' variant='body1' color='error'>{error}</Typography> : null}
+      {message.length ? <Typography component='span' variant='body1' color='secondary'>{message}</Typography> : null}
     </form>
   );
 }
