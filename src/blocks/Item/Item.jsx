@@ -35,7 +35,6 @@ class Item extends Component {
   }
 
   render() {
-    console.log(this.state.item);
     return this.state.item === null ? null : (
       <Grid style={{ margin: "auto" }} item xs={12} md={6}>
         <Box>

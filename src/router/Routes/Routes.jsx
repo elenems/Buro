@@ -8,8 +8,10 @@ export default function Routes() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/item/:id" component={ItemPage} />
         <Route path="/add" component={AddItemPage} />
+        <Route path="/item/:id" render={props => (
+            <ItemPage key={props.match.params.id} {...props} />
+          )} />
       </Switch>
     </BrowserRouter>
   );
