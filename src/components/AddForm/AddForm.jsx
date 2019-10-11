@@ -47,7 +47,7 @@ export default function AddForm() {
     const link = 'https://europe-west2-buro-c4d93.cloudfunctions.net/api/addItem?' + requestParams;
     axios.post(link, data)
     .then((data)=>{
-      setMessage(data.data.message);
+      setMessage('Успішно додано');
       setError('')
     })
     .catch(e=>{
