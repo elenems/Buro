@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Renders 1`] = `
+"<WithStyles(ForwardRef(Grid)) classes={{...}} item={true} xs={12} md={6}>
+  <header>
+    <Styled(MuiBox)>
+      <WithStyles(ForwardRef(Button)) onClick={[Function: moveToAddPage]} variant=\\"contained\\" color=\\"primary\\" endIcon={{...}}>
+        Розмістити
+      </WithStyles(ForwardRef(Button))>
+      <SearchBar />
+    </Styled(MuiBox)>
+  </header>
+</WithStyles(ForwardRef(Grid))>"
+`;

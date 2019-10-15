@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem Matches snapshot 1`] = `
+"<Styled(MuiBox) display=\\"flex\\" flexDirection=\\"column\\" justifyContent=\\"space-evenly\\" classes={{...}}>
+  <div className=\\"imagePlaceholder\\">
+    <Link to=\\"/item/1\\">
+      <img src={[undefined]} alt=\\"Some title\\" />
+    </Link>
+  </div>
+  <Styled(MuiBox) classes={{...}} p=\\"0px 4px\\">
+    <WithStyles(ForwardRef(Typography)) variant=\\"subtitle1\\" component=\\"h4\\">
+      Some title
+    </WithStyles(ForwardRef(Typography))>
+    <Styled(MuiBox) display=\\"flex\\" alignItems=\\"center\\" justifyContent=\\"space-between\\">
+      <Styled(MuiBox) display=\\"flex\\" alignItems=\\"center\\">
+        <ScheduleIcon color=\\"primary\\" />
+        <WithStyles(ForwardRef(Typography)) style={{...}} variant=\\"subtitle1\\" component=\\"span\\">
+          10/15/201
+        </WithStyles(ForwardRef(Typography))>
+      </Styled(MuiBox)>
+      <Styled(MuiBox) display=\\"flex\\" alignItems=\\"center\\">
+        <LocationOnOutlinedIcon color=\\"primary\\" />
+        <WithStyles(ForwardRef(Typography)) variant=\\"subtitle1\\" component=\\"span\\" />
+      </Styled(MuiBox)>
+    </Styled(MuiBox)>
+  </Styled(MuiBox)>
+</Styled(MuiBox)>"
+`;

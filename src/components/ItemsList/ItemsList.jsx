@@ -7,6 +7,7 @@ export default class ItemsList extends Component {
   state = {
     items: []
   };
+
   componentDidMount() {
     axios
       .get("https://europe-west2-buro-c4d93.cloudfunctions.net/api/getItems")

@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   }
 });
 
-function Header({ history }) {
+export function Header({ history }) {
   const classes = useStyles();
 
   const moveToAddPage = () => {

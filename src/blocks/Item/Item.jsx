@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
 
-class Item extends Component {
+export class Item extends Component {
   state = {
     item: null,
     message: ""

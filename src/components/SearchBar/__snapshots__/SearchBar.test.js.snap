@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar Renders 1`] = `
+"<Styled(MuiBox) style={{...}} display=\\"flex\\" justifyContent=\\"center\\" alignItems=\\"baseline\\">
+  <WithStyles(ForwardRef(FormControl)) className=\\"makeStyles-formControl-2\\">
+    <WithStyles(ForwardRef(Select)) value=\\"Lviv\\" name=\\"region\\" onChange={[Function: handleChange]} autoWidth={true}>
+      <WithStyles(ForwardRef(MenuItem)) value=\\"Lviv\\">
+        Львів
+      </WithStyles(ForwardRef(MenuItem))>
+      <WithStyles(ForwardRef(MenuItem)) value=\\"Kharkiv\\">
+        Харків
+      </WithStyles(ForwardRef(MenuItem))>
+      <WithStyles(ForwardRef(MenuItem)) value=\\"Kyiv\\">
+        Київ
+      </WithStyles(ForwardRef(MenuItem))>
+    </WithStyles(ForwardRef(Select))>
+    <WithStyles(ForwardRef(FormHelperText))>
+      Регіон
+    </WithStyles(ForwardRef(FormHelperText))>
+  </WithStyles(ForwardRef(FormControl))>
+  <WithStyles(ForwardRef(TextField)) autoComplete=\\"off\\" fullWidth={true} id=\\"search\\" label=\\"Шукати майно\\" type=\\"search\\" margin=\\"normal\\" value=\\"\\" onChange={[Function: handleTitleChange]} />
+  <WithStyles(ForwardRef(IconButton)) color=\\"primary\\" aria-label=\\"Search\\">
+    <SearchIcon />
+  </WithStyles(ForwardRef(IconButton))>
+  <withRouter(Suggestions) items={{...}} />
+</Styled(MuiBox)>"
+`;

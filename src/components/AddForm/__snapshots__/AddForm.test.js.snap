@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddForm Matches snapshot 1`] = `
+"<form>
+  <WithStyles(ForwardRef(Typography)) component=\\"h2\\" variant=\\"h4\\">
+    Розмістіть знайдену річ
+  </WithStyles(ForwardRef(Typography))>
+  <Styled(MuiBox) minHeight=\\"360px\\" justifyContent=\\"space-between\\" display=\\"flex\\" flexDirection=\\"column\\">
+    <WithStyles(ForwardRef(TextField)) id=\\"title\\" label=\\"Заголовок\\" value=\\"\\" onChange={[Function: handleChange]} margin=\\"normal\\" />
+    <WithStyles(ForwardRef(FormControl))>
+      <WithStyles(ForwardRef(InputLabel)) htmlFor=\\"location\\">
+        Місто
+      </WithStyles(ForwardRef(InputLabel))>
+      <WithStyles(ForwardRef(Select)) native={true} value=\\"Lviv\\" onChange={[Function: handleChange]} inputProps={{...}}>
+        <option value=\\"Lviv\\">
+          Львів
+        </option>
+        <option value=\\"Kyiv\\">
+          Київ
+        </option>
+        <option value=\\"Kharkiv\\">
+          Харків
+        </option>
+      </WithStyles(ForwardRef(Select))>
+    </WithStyles(ForwardRef(FormControl))>
+    <textarea value=\\"\\" onChange={[Function: handleChange]} placeholder=\\"Опис\\" id=\\"description\\" />
+    <span className=\\"label\\">
+      Фото
+    </span>
+    <input type=\\"file\\" name=\\"file\\" onChange={[Function: onChangeHandler]} />
+    <WithStyles(ForwardRef(Button)) onClick={[Function: send]} color=\\"primary\\">
+      Відправити
+    </WithStyles(ForwardRef(Button))>
+  </Styled(MuiBox)>
+</form>"
+`;
