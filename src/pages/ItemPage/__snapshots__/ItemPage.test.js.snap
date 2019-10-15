@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemPage Matches snapshot 1`] = `
+"<WithStyles(ForwardRef(Container)) fixed={true}>
+  <WithStyles(ForwardRef(Grid)) justify=\\"flex-start\\" direction=\\"column\\" container={true} spacing={6}>
+    <withRouter(Header) />
+    <withRouter(Item) />
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Container))>"
+`;
