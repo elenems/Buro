@@ -2,7 +2,6 @@ import React from "react";
 import { shallow } from "enzyme";
 import ItemsList from "../ItemsList";
 
-
 describe("ItemsList", () => {
 
     it("Matches snapshot", () => {
@@ -16,8 +15,9 @@ describe("ItemsList", () => {
     expect(wrapper.find("ListItem").length).toBeGreaterThan(0);
   });
 
-  it("Ss", () => {
+  it("Sets items to state after request", async () => {
     const wrapper = shallow(<ItemsList />);
-    wrapper.instance().componentDidMount();
+    await wrapper.instance().componentDidMount();
+    expect(wrapper.state('items').length).toBeGreaterThan(0);
   });
 });

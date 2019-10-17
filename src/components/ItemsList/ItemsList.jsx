@@ -8,8 +8,8 @@ export default class ItemsList extends Component {
     items: []
   };
 
-  componentDidMount() {
-    axios
+  async componentDidMount() {
+    return axios
       .get("https://europe-west2-buro-c4d93.cloudfunctions.net/api/getItems")
       .then(data => {
         if (this.props.new) {
